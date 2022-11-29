@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+form {
+  width: 400px;
+  height: 270px;
+  border-left: 5px #1c1c1c;
+  border-right: 5px #1c1c1c;
+  border-top: 5px #1c1c1c;
+  border-bottom: 5px #1c1c1c;
+  border-style:  inset;
+  padding: 10px 0;
+  margin: 50px auto;
+  /* background-image: -webkit-linear-gradient(left, #000 50%, #000 50%), -webkit-linear-gradient(left, #000 50%, #000 50%);
+  background-image: -moz-linear-gradient(left, #000 50%, #000 50%), -moz-linear-gradient(left, #000 50%, #000 50%);
+  background-image: -o-linear-gradient(left, #000 50%, #000 50%), -o-linear-gradient(left, #000 50%, #000 50%);
+  background-image: linear-gradient(to right, #000 50%, #000 50%), linear-gradient(to right, #000 50%, #000 50%);
+  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  background-size: 100% 10px; */
+}
+
+.login-text {
+  color: ivory;
+}
+
+.header-text {
+  color: ivory;
+}
+
+.register-text {
+  color: ivory;
+}
+
+form.register-form {
+  width: 500px;
+  height: 430px;
+  border-left: 5px #1c1c1c;
+  border-right: 5px #1c1c1c;
+  border-top: 5px #1c1c1c;
+  border-bottom: 5px #1c1c1c;
+  border-style:  inset;
+  padding: 10px 0;
+  margin: 50px auto;
+}
+
+.rules-text {
+  color: ivory;
+  font-family: ;
+}
+
+.text {
+  color: rgb(216, 70, 70);
+}
+
+.rules-border {
+  width: 300px;
+  height: 300px;
+  border-left: 5px #1c1c1c;
+  border-right: 5px #1c1c1c;
+  border-top: 5px #1c1c1c;
+  border-bottom: 5px #1c1c1c;
+  border-style:  inset;
+  padding: 100x 0;
+  margin: 10px auto;
+}
+

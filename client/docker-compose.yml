@@ -1,0 +1,8 @@
+version: "3"
+services:
+  ui:
+    image: paulpaulpaulpaulpaulpaulpaul/roguelike-ui:1.1
+    ports:
+      - 80:80
+    environment:
+      - API_URL=http://roguelikeapi-env.eba-8mpwa3am.us-east-2.elasticbeanstalk.com:8080

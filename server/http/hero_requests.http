@@ -1,0 +1,51 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyb2d1ZWxpa2UiLCJzdWIiOiJwYWdvdG8iLCJpZCI6MSwiYXV0aG9yaXRpZXMiOiJBRE1JTiIsImV4cCI6MTY0NjIzNDcyOH0.ds7FAKI_IL6eMqllHyZSv2myOwTjcMQas_zorlxIcEo
+@url = http://localhost:8080/api/hero
+
+GET {{url}} HTTP/1.1
+
+###
+GET {{url}}/20 HTTP/1.1
+
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{jwt}}
+
+{
+    "gameId": 1,
+    "hp": 78,
+    "lives": 3,
+    "air": "false",
+    "water": "false",
+    "earth": "false",
+    "fire": "false",
+    "gold": 20,
+    "tileId": 1
+    
+}
+
+//You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'keys, lives, tile_id, water) values (0, 0, 0, 50, 100, 0, 3, 4, 0)' at line 1
+
+###
+PUT {{url}}/edit/1 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "heroId": 1,
+    "gameId": 1,
+    "hp": 11,
+    "lives": 3,
+    "air": "false",
+    "water": "false",
+    "earth": "false",
+    "fire": "false",
+    "keys": 0,
+    "gold": 50,
+    "gameId": 1
+
+}
+//this is also failing for the same reasons
+###
+DELETE {{url}}/4 HTTP/1.1

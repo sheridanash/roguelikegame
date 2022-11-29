@@ -1,0 +1,10 @@
+version: "3"
+services:
+  api:
+    image: paulpaulpaulpaulpaulpaulpaul/roguelike-api:1.1
+    ports:
+      - 8080:8080
+    environment:
+      - DB_URL=jdbc:mysql://rogue-db.cn7ajgqf9e2f.us-east-2.rds.amazonaws.com:3306/roguelike
+      - DB_USERNAME=admin
+      - DB_PASSWORD=R3KDJHx8m2v4qqgiNjzp

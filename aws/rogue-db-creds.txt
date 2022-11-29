@@ -1,0 +1,3 @@
+rogue-db
+master username: admin
+master password: R3KDJHx8m2v4qqgiNjzp

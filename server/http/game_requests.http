@@ -1,0 +1,97 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyb2d1ZWxpa2UiLCJzdWIiOiJwYWdvdG8iLCJpZCI6MSwiYXV0aG9yaXRpZXMiOiJBRE1JTiIsImV4cCI6MTY0NjIzNDcyOH0.ds7FAKI_IL6eMqllHyZSv2myOwTjcMQas_zorlxIcEo
+@url = http://localhost:8080/api/game
+@host = http://localhost:8080
+
+GET {{url}} HTTP/1.1
+
+###
+
+GET {{url}}/1 HTTP/1.1
+Authorization: Bearer {{jwt}}
+
+###
+
+GET {{url}}/player/1 HTTP/1.1
+//Authorization: Bearer {{jwt}}
+
+###
+
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{jwt}}
+
+{
+    "score": 300,
+    "blueprint": true
+    
+}
+
+### 
+
+POST {{url}}/create HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{jwt}}
+
+{
+    "score": 0,
+    "blueprint": false,
+    "playerId": 1
+
+}
+
+
+//getting this error
+//JWT validity cannot be asserted and should not be trusted.
+
+###
+GET {{url}}/56 HTTP/1.1
+Authorization: Bearer {{jwt}}
+
+###
+GET {{url}}/14 HTTP/1.1
+Authorization: Bearer {{jwt}}
+
+###
+PUT {{url}}/save/14 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+//Authorization: Bearer {{jwt}}
+
+
+{
+    "gameId": 14,
+    "score": 200,
+    "isBlueprint": false, 
+    "playerId": 1,
+    "hero": {
+    "heroId": 12,
+    "hp": 300,
+    "lives": 3,
+    "air": false,
+    "water": true,
+    "earth": false,
+    "fire": false,
+    "keys": 0,
+    "gold": 0,
+    "tile": {
+      "tileId": 11265,
+      "type": "grass",
+      "x": 0,
+      "y": 0,
+      "mapId": 45
+    },
+    "gameId": 14
+  }
+
+    }
+
+}
+
+
+
+###
+DELETE {{url}}/4 HTTP/1.1
+Authorization: Bearer {{jwt}}
+
